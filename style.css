@@ -1,0 +1,159 @@
+/*
+===============================================================================
+CUSTOM STYLE: DISABLE TEXT SELECTION
+===============================================================================
+*/
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
+/*
+===============================================================================
+STYLE: BODY
+===============================================================================
+*/
+
+body {
+    background-color: lightgray;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+===============================================================================
+STYLE: BOARD
+===============================================================================
+*/
+
+#board {
+    width: 560px;
+    height: 573px;
+    border-radius: 3px;
+    background-color: #b33c00;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0px auto;
+}
+
+.field {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(#7db9e8, #1E5799);
+}
+
+.field:hover {
+    background: linear-gradient(#1E5799, #7db9e8);
+    cursor: pointer;
+}
+
+.field img {
+    width: 100px;
+    display: none;
+    margin: 7px auto;
+}
+
+/*
+===============================================================================
+STYLE: PARTY-INFO SECTION
+===============================================================================
+*/
+
+#party-info {
+    font-size: 20px;
+    display: block;
+    width: 560px;
+    height: 30px;
+    margin: 0px auto;
+}
+
+#playing-as {
+    display: inline-block;
+    width: 420px;
+}
+
+#player-name {
+    font-size: 23px;
+    font-weight: bold;
+    color: darkslategray;
+}
+
+#playing-time {
+    display: inline-block;
+    width: 130px;
+    color: coral;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.time-label {
+    width: 60px;
+    display: inline-block;
+    text-align: right;
+}
+
+/*
+===============================================================================
+STYLE: DIALOGS
+===============================================================================
+*/
+
+dialog[title='play-as-dialog'],
+dialog[title='choose-mode-dialog'],
+dialog[title='end-game-dialog'] {
+    display: none;
+    width: 120px;
+    height: 300px;
+}
+
+select[name='mode'] {
+    display: block;
+    margin: 0px auto;
+    background-color: darkslategrey;
+    color: whitesmoke;
+    border: 1px solid darkslategray;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+select[name='mode']:hover {
+    cursor: pointer;
+}
+
+#input-name {
+    margin-top: 30px;
+    padding: 5px;
+}
+
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
+
+.ui-dialog-titlebar:hover {
+    cursor: default;
+}
+
+/*
+===============================================================================
+CUSTOM STYLE: FIELDS (IN-GAME) BEHAVIOUR
+===============================================================================
+*/
+
+.selected {
+    background: white !important;
+    cursor: default !important;
+}
+
+.matched {
+    background: #0bc4a5 !important;
+    cursor: default !important;
+}
