@@ -149,7 +149,7 @@ CUSTOM STYLE: FIELDS (IN-GAME) BEHAVIOUR
 */
 
 .selected {
-    background: white !important;
+    background: #ffaf87 !important;
     cursor: default !important;
 }
 
